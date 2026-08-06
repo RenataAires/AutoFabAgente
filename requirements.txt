@@ -1,6 +1,8 @@
 langchain
 langchain-community
-langchain-openai
+langchain-groq
+langchain-huggingface
+sentence-transformers
 streamlit
 pypdf
 python-docx
@@ -9,3 +11,4 @@ pandas
 openpyxl
 beautifulsoup4
 python-dotenv
+chromadb    
