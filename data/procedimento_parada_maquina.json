@@ -1,0 +1,10 @@
+{
+  "procedimento": "Parada de Emergência e LOTO (Lockout/Tagout)",
+  "codigo": "SOP-ENG-042",
+  "etapas": [
+    "Desligar a chave geral do painel principal da célula de produção.",
+    "Aplicar o cadeado de bloqueio pessoal no disjuntor correspondente.",
+    "Afixar a etiqueta de advertência amarela informando nome do técnico e data.",
+    "Aliviar a pressão residual nas tubulações pneumáticas e hidráulicas antes da intervenção."
+  ]
+}
