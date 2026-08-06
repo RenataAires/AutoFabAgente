@@ -1,0 +1,16 @@
+[
+  {
+    "codigo_erro": "ERR-101",
+    "equipamento": "Prensa Hidráulica H-500",
+    "descricao_falha": "Pressão de óleo abaixo do limite mínimo operacional.",
+    "causa_provavel": "Vazamento nas mangueiras secundárias ou obstrução no filtro principal.",
+    "acao_recomendada": "Parar a máquina imediatamente, isolar o circuito hidráulico e realizar a troca do filtro ou reparo do vazamento."
+  },
+  {
+    "codigo_erro": "ERR-204",
+    "equipamento": "Esteira Transportadora T-02",
+    "descricao_falha": "Superaquecimento no motor de tração.",
+    "causa_provavel": "Sobrecarga de peças na linha de montagem ou travamento do rolete guia.",
+    "acao_recomendada": "Verificar se há peças presas nos roletes e aguardar a temperatura reduzir para realizar o reset do inversor de frequência."
+  }
+]
