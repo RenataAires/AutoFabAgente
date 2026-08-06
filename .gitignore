@@ -1,6 +1,6 @@
 # Variáveis de Ambiente e Chaves de API (NUNCA envie para o GitHub!)
 .env
-
+chroma_db/
 # Ambiente Virtual do Python
 venv/
 .venv/
