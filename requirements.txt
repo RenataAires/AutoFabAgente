@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-openai
+streamlit
+pypdf
+python-docx
+python-pptx
+pandas
+openpyxl
+beautifulsoup4
+python-dotenv
