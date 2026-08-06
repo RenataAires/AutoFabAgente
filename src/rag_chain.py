@@ -49,7 +49,7 @@ def criar_cadeia_rag(vectorstore):
     )
 
     # Configura o buscador no banco vetorial (traz os 3 chunks mais parecidos)
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
 
     # Cria o template do prompt
     prompt = ChatPromptTemplate.from_template(PROMPT_TEMPLATE_AUTOFAB)
