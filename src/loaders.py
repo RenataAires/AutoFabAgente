@@ -4,7 +4,6 @@ from langchain_community.document_loaders import (
     TextLoader,
     CSVLoader,
     BSHTMLLoader,
-    UnstructuredMarkdownLoader,
     UnstructuredWordDocumentLoader,
     UnstructuredPowerPointLoader
 )
@@ -33,15 +32,12 @@ def carregar_documentos(diretorio_data: str):
             if extensao == '.pdf':
                 loader = PyPDFLoader(caminho_completo)
                 documentos.extend(loader.load())
-            elif extensao == '.md':
-                loader = UnstructuredMarkdownLoader(caminho_completo)
+            elif extensao in ['.md', '.json', '.txt']:
+                # Usa TextLoader para texto puro, Markdown e JSON simples
+                loader = TextLoader(caminho_completo, encoding='utf-8')
                 documentos.extend(loader.load())
             elif extensao == '.csv':
                 loader = CSVLoader(caminho_completo, encoding='utf-8')
-                documentos.extend(loader.load())
-            elif extensao in ['.json', '.txt']:
-                # Carregamento simplificado e direto para JSON/TXT
-                loader = TextLoader(caminho_completo, encoding='utf-8')
                 documentos.extend(loader.load())
             elif extensao in ['.html', '.htm']:
                 loader = BSHTMLLoader(caminho_completo)
