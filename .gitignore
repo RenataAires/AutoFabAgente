@@ -1,5 +1,21 @@
+# Variáveis de Ambiente e Chaves de API (NUNCA envie para o GitHub!)
 .env
+
+# Ambiente Virtual do Python
 venv/
+.venv/
+env/
+
+# Arquivos temporários e Cache do Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Cache do Streamlit
+.streamlit/secrets.toml
+
+# Arquivos de sistema operacional
 .DS_Store
+Thumbs.db
